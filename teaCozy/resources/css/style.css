@@ -1,0 +1,174 @@
+/*  -----   GLOBAL Settings     ---- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2, h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*  -----   Header     ---- */
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  font-size: 22px;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid white;
+}
+
+.logoHeader {
+  display: flex;
+  flex-grow: 1;      /* Fills empty space / pushes nav section to right */
+}
+
+header img {
+  height: 50px;
+}
+
+header nav {
+  margin-right: 50px;
+}
+
+header span {
+  margin-right: 20px;
+  font-family: Helvetica;
+  text-decoration: underline;
+}
+
+/*  -----   MISSION section     ---- */
+#mission {
+  display: flex;
+  height: 700px;
+  background-image: url("../images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70px;             /* pushes section start below header */
+}
+
+#mission h2, #mission h4 {
+  width: 1200px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*  -----   TEA OF MONTH section     ---- */
+
+#teaMonthHeader {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.teaMonth {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+                /* justifies content against outside border when 3 boxes */
+.threeAcross {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+                /* Centers content when < 3 boxes */
+.lessThanThree {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+                /* Padding when rows < 3 boxes */
+.lessThanThree .monthBox {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.monthBox img {
+  height: 200px;
+  width: 300px;
+}
+
+/*  -----   LOCATIONS section     ---- */
+
+#locations {
+  display: flex;
+  height: 500px;
+  width: 1200px;
+  background-image: url("../images/img-locations-background.jpg");
+  background-repeat: no-repeat;
+   flex-direction: column;
+  align-items: center;
+ justify-content: center;
+
+}
+
+#locations h2 {
+  width: 100%;
+  padding-bottom: 15px;
+  background-color: transparent;
+}
+
+#locationDetail {
+  display: flex;
+  width: 100%
+  justify-content: center;
+  background-color: transparent;
+
+}
+
+.locationsBox {
+  display: flex;
+  width: 300px;
+  opacity: 1.0;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px 0 20px;
+}
+
+.locationsBox p, h3 {
+  padding: 20px 0 20px 0;
+}
+
+/*  -----   CONTACT section     ---- */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  text-align: center;
+}
+
+#contact h5 {
+  padding: 20px 0 20px 0;
+  font-size: 15px;
+}
+
+/*  -----   FOOTER section     ---- */
+footer {
+  width: 100%;
+  margin-left: 20px;
+}
